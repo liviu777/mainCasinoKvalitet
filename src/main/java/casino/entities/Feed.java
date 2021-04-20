@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Feed {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) //specificam strategia de generarea a primary key-ului prin auto-increment
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //specificam strategia de generarea a primary key-ului prin auto-increment
     private Long feedId;
     @Column //specificam numele coloanei obisnuite (name="numele coloane")
     private String description;

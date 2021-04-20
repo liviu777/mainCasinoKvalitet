@@ -8,7 +8,9 @@ import java.util.List;
 @Entity
 public class Casino {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //GenerationType.IDENTITY = Auto-increment
+    //GenerationType.AUTO - gets the defult strategy from the db provider -> https://www.baeldung.com/jpa-strategies-when-set-primary-key#1-generationtypeauto
     private Long casinoId;
     @Column
     private String name;

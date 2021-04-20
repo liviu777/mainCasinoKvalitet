@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Winning {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long winningId;
     @Column
     private String photoLocation;
