@@ -41,7 +41,7 @@ public class UserController {
         return userService.save(user);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")//https://localhost:8080/user/delete/3
     public void delete(@PathVariable Long userId) {
         userService.delete(userId);
     }

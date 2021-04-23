@@ -15,7 +15,7 @@ public class Casino {
     @Column
     private String name;
     @Column
-    private String rate;
+    private Integer rate;
     @Column
     private String photoLocation;
     @OneToMany(mappedBy = "casino")
@@ -45,11 +45,11 @@ public class Casino {
         this.name = name;
     }
 
-    public String getRate() {
+    public Integer getRate() {
         return rate;
     }
 
-    public void setRate(String rate) {
+    public void setRate(Integer rate) {
         this.rate = rate;
     }
 
